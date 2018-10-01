@@ -1,0 +1,21 @@
+.articles h2{
+	color: #4cae4c;
+
+}
+
+.article{
+	background-color: #d8e5e7;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+h1{
+	text-align:center ;
+	margin-bottom: 30px;
+}
+h2{
+	color: #2e6da4;
+	font-size: 30px;
+}
+p{
+	color: #2b542c;
+}

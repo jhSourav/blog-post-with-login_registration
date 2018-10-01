@@ -1,0 +1,34 @@
+{% load staticfiles  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+     <h1>লগিন</h1>
+
+
+{#<section class="sign">#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-sm-12">#}
+{#                #}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</section>#}
+  <form class='form' id="login_form" method="post" action="/login/">
+            {% csrf_token %}
+            Username: <input type="text" name="username" value="" size="50" />
+            <br />
+            <br />
+            Password: <input type="password" name="password" value="" size="50" />
+            <br />
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</body>
+</html>
